@@ -32,7 +32,7 @@
 
 ##   **安装**
 ~~~
-composer require kitesky/mzhpay dev-main
+composer require kitesky/mzhpay
 ~~~
 ##   **使用说明**
 ### 支付宝电脑支付代码
@@ -80,6 +80,8 @@ class Test
 
 
 ~~~
+具体返回参数，请查看官方开发文档。
+
 
 ##   许可协议
 MIT协议
