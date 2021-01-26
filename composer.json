@@ -16,6 +16,7 @@
             "homepage": "https://www.kktt.cn"
         }
     ],
+	"minimum-stability": "dev",
 	"autoload": {
 		"psr-4": {
 			"payment\\": "src/"
