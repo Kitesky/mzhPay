@@ -32,7 +32,7 @@
 
 ##   **安装**
 ~~~
-composer require kite/mzh-pay
+composer require kitesky/mzhpay
 ~~~
 ##   **使用说明**
 ### 支付宝电脑支付代码
