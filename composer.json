@@ -3,7 +3,7 @@
     "description": "美智合聚合支付通道，集成支付宝和微信支付，统一接口调用，快速接入开发。",
 	"keywords": ["alipay", "wechat", "pay"],
     "require": {
-        "php": >= "5.6.0",
+        "php": ">=5.6.0"
     },
     "license": "MIT",
     "authors": [
