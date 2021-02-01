@@ -36,7 +36,13 @@
 composer require kitesky/mzhpay
 ~~~
 ##   **使用说明**
-### 支付宝电脑支付代码
+### 两行代码实现接入
+~~~
+$order = ['method' => 'trade.query','title'  => '测试标题001','amount' => 1,'out_order_no' => 'P2020101231'];
+$pay->sendPost($order);
+~~~
+
+### 完成接入代码示例
 ~~~
 <?php
 namespace app\controller
@@ -51,11 +57,11 @@ class Test
         $pay = new simplePay;
 
         $order = [
-            'method' => 'trade.query',
-            'title'  => '测试标题001',
-            'amount' => 1,
-            'out_order_no' => 'ZF2021012314301111',
-            'extra' => json_encode(['a' => 1112,'bbb' => 'fsafas']),
+            'method' => 'trade.query', // 接口名称
+            'title'  => '测试标题001',  // 产品标题
+            'amount' => 1,             // 订单金额
+            'out_order_no' => 'ZF2021012314301111', // 商户订单号
+            'extra' => json_encode(['a' => 1112,'bbb' => 'fsafas']), // 额外参数，原样返回
         ];
         try {
             $res = $pay->sendPost($order);
